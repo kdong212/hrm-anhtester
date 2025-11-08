@@ -1,0 +1,22 @@
+1. Install Dependencies
+python -m venv venv
+
+python3 -m venv venv
+
+activate
+- windows: venv\Scripts\activate
+- mac: source venv/bin/activate
+
+Command Shift P -> tao venv (MAC)
+
+pip install -r requirements.txt
+
+
+playwright install
+pip install faker
+
+
+pip freeze > requirements.txt
+
+pytest tests/
+
