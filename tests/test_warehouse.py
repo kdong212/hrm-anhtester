@@ -26,7 +26,7 @@ def test_logged_in_page(page: Page):
     print("[Setup] Done login")
 
     # --- PHẦN 2: YIELD ---
-    yield HomePage
+    yield page
 
     # --- PHẦN 3: TEARDOWN ---
     print("\n[Fixture Teardown] Logging out ...")
@@ -36,11 +36,12 @@ def test_logged_in_page(page: Page):
 
 def test_add_warehouse_successful(test_logged_in_page):
     # assert test_logged_in_page is not None
-    warehouse_page = WarehousePage()
+    page = test_logged_in_page  # ✅ fixture trả về Page
+    warehouse_page = WarehousePage(page)  # ✅ truyền page vào
     warehouse_data = WarehouseData()
+
     warehouse_page.fill_warehouse_details(warehouse_data)
     warehouse_page.save_warehouse()
-    print("Thông báo 'Warehouse added' đã hiển thị.")
-    
     warehouse_page.verify_warehouse_in_list(warehouse_data)
+    
     print(f"Warehouse '{warehouse_data.name}' đã được thêm và hiển thị đúng trong danh sách.")
