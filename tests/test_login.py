@@ -34,4 +34,3 @@ def test_logged_in_page(page: Page):
 
 def test_successful_login_standard_user(test_logged_in_page):
     assert test_logged_in_page is not None
-

@@ -1,0 +1,36 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug test_warehouse.py (pytest)",
+            "type": "debugpy",
+            "request": "launch",
+            "module": "pytest",
+            "args": [
+                "tests/test_dropdown_basic.py",
+
+                "-s",
+                "-v"
+            ],
+            "console": "integratedTerminal",
+            "justMyCode": false,
+            "env": {
+                "PYTHONPATH": "${workspaceFolder}"
+            }
+        }
+    ]
+}
+// {
+//   "name": "Debug Pytest",
+//   "type": "python",
+//   "request": "launch",
+//   "program": "${workspaceFolder}/.venv/bin/pytest",
+//   "args": [
+//     "--headed",          // mở browser
+//     "--slowmo=30",      // chạy chậm lại để thấy
+//     "tests/test_warehouse.py",
+//     "-s"
+//   ],
+//   "console": "integratedTerminal",
+//   "justMyCode": false
+// }

@@ -62,9 +62,9 @@ class WarehousePage(BasePage):
         # expect(page.locator("text='Welcome'")).to_be_visible() # Xác nhận đăng nhập thành công
 
     # Điều hướng đến trang thêm Warehouse
-        self.navigate_to_warehouse_list()
+        # self.navigate_to_warehouse_list()
         #----------------------------- update by going to submenu later
-        self.click_add_new_button()
+        # self.click_add_new_button()
 
     # --- Step 1: Tạo dữ liệu ngẫu nhiên ---
         # warehouse_data = WarehouseData()
