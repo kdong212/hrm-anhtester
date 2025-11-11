@@ -53,6 +53,31 @@ class WarehousePage(BasePage):
     def click_add_new_button(self):
         self._click(self.ADD_NEW_BUTTON)
 
+    def select_country(self,country_name):
+        self._select_item_from_ddl(self.COUNTRY_DROPDOWN_DISPLAY,self.COUNTRY_SEARCH_INPUT,country_name,1)
+
+
+    #     page.get_by_role("button", name=" Login").click()
+    # page.get_by_role("link", name="Inventory Control").click()
+    # page.get_by_role("link", name="Warehouses").click()
+    # page.get_by_role("link", name="Add New").click()
+
+        # page.get_by_role("textbox", name="Yes").click()
+        # page.get_by_role("option", name="Yes").click()
+        # page.get_by_placeholder("Contact Number").click()
+        # page.get_by_placeholder("Contact Number").fill("124444444")
+        # page.get_by_placeholder("Warehouse Name").click()
+        # page.get_by_placeholder("Warehouse Name").fill("ABBWWW")
+        # page.get_by_placeholder("Address", exact=True).click()
+        # page.get_by_placeholder("Address", exact=True).fill("australia")
+        # page.get_by_placeholder("City").click()
+        # page.get_by_placeholder("City").fill("norw")
+        # page.get_by_placeholder("State / Province").click()
+        # page.get_by_placeholder("State / Province").fill("12121")
+        # page.get_by_placeholder("Zip Code / Postal Code").click()
+        # page.get_by_placeholder("Zip Code / Postal Code").fill("634545435")
+        # page.get_by_role("button", name="Save").click()    
+
     def fill_warehouse_details(self,warehouse_data: WarehouseData):
         
         # page.goto("https://hrm.anhtester.com/login")
