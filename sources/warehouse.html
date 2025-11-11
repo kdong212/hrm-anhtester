@@ -1,0 +1,1306 @@
+<html lang="en" class="k-webkit k-webkit142"><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/content/location/location.js" id="eppiocemhmnlbhjplcgkofciiegomcon"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/extend-native-history-api.js"></script><script src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/libs/requests.js"></script><head>
+    <title>Warehouses | HRM | Anh Tester Demo</title>
+    <!-- HTML5 Shim and Respond.js IE11 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 11]>
+    	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    	<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    	<![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="erp">
+
+    <!-- Favicon icon -->
+    <link rel="icon" href="https://hrm.anhtester.com/public/uploads/logo/favicon/favicon.png" type="image/x-icon">
+
+    <!-- font css -->
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/fonts/font-awsome-pro/css/pro.min.css">
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/fonts/feather.css">
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/fonts/fontawesome.css">
+
+    <!-- vendor css -->
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/style.css">
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/customizer.css">
+    
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/layout-modern.css">
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/plugins/dataTables.bootstrap4.min.css">
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/plugins/select2.min.css">
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/plugins/toastr/toastr.css">
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/plugins/jquery-ui/jquery-ui.css">
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/plugins/bootstrap-material-datetimepicker/bootstrap-material-datetimepicker.css">
+    <!--<link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/plugins/bootstrap-datepicker3.min.css">
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/plugins/bootstrap-timepicker.min.css">-->
+                    <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.330/styles/kendo.bootstrap-v4.min.css">
+        <link rel="stylesheet" href="https://kendo.cdn.telerik.com/2021.1.330/styles/kendo.rtl.min.css">
+           <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/plugins/bars-movie.css"> 
+   <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/plugins/css-stars.css">
+   <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/plugins/bars-1to10.css">
+   <!-- rangeslider css -->
+	<link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/plugins/bootstrap-slider.min.css">
+        <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/css/plugins/fullcalendar.min.css">
+        <script bis_use="true" type="text/javascript" charset="utf-8" data-bis-config="[&quot;facebook.com/&quot;,&quot;twitter.com/&quot;,&quot;youtube-nocookie.com/embed/&quot;,&quot;//vk.com/&quot;,&quot;//www.vk.com/&quot;,&quot;linkedin.com/&quot;,&quot;//www.linkedin.com/&quot;,&quot;//instagram.com/&quot;,&quot;//www.instagram.com/&quot;,&quot;//www.google.com/recaptcha/api2/&quot;,&quot;//hangouts.google.com/webchat/&quot;,&quot;//www.google.com/calendar/&quot;,&quot;//www.google.com/maps/embed&quot;,&quot;spotify.com/&quot;,&quot;soundcloud.com/&quot;,&quot;//player.vimeo.com/&quot;,&quot;//disqus.com/&quot;,&quot;//tgwidget.com/&quot;,&quot;//js.driftt.com/&quot;,&quot;friends2follow.com&quot;,&quot;/widget&quot;,&quot;login&quot;,&quot;//video.bigmir.net/&quot;,&quot;blogger.com&quot;,&quot;//smartlock.google.com/&quot;,&quot;//keep.google.com/&quot;,&quot;/web.tolstoycomments.com/&quot;,&quot;moz-extension://&quot;,&quot;chrome-extension://&quot;,&quot;/auth/&quot;,&quot;//analytics.google.com/&quot;,&quot;adclarity.com&quot;,&quot;paddle.com/checkout&quot;,&quot;hcaptcha.com&quot;,&quot;recaptcha.net&quot;,&quot;2captcha.com&quot;,&quot;accounts.google.com&quot;,&quot;www.google.com/shopping/customerreviews&quot;,&quot;buy.tinypass.com&quot;,&quot;gstatic.com&quot;,&quot;secureir.ebaystatic.com&quot;,&quot;docs.google.com&quot;,&quot;contacts.google.com&quot;,&quot;github.com&quot;,&quot;mail.google.com&quot;,&quot;chat.google.com&quot;,&quot;audio.xpleer.com&quot;,&quot;keepa.com&quot;,&quot;static.xx.fbcdn.net&quot;,&quot;sas.selleramp.com&quot;,&quot;1plus1.video&quot;,&quot;console.googletagservices.com&quot;,&quot;//lnkd.demdex.net/&quot;,&quot;//radar.cedexis.com/&quot;,&quot;//li.protechts.net/&quot;,&quot;challenges.cloudflare.com/&quot;,&quot;ogs.google.com&quot;]" src="chrome-extension://eppiocemhmnlbhjplcgkofciiegomcon/executors/traffic.js"></script><style>.swal2-popup.swal2-toast{flex-direction:row;align-items:center;width:auto;padding:.625em;overflow-y:hidden;background:#fff;box-shadow:0 0 .625em #d9d9d9}.swal2-popup.swal2-toast .swal2-header{flex-direction:row;padding:0}.swal2-popup.swal2-toast .swal2-title{flex-grow:1;justify-content:flex-start;margin:0 .6em;font-size:1em}.swal2-popup.swal2-toast .swal2-footer{margin:.5em 0 0;padding:.5em 0 0;font-size:.8em}.swal2-popup.swal2-toast .swal2-close{position:static;width:.8em;height:.8em;line-height:.8}.swal2-popup.swal2-toast .swal2-content{justify-content:flex-start;padding:0;font-size:1em}.swal2-popup.swal2-toast .swal2-icon{width:2em;min-width:2em;height:2em;margin:0}.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:1.8em;font-weight:700}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-popup.swal2-toast .swal2-icon .swal2-icon-content{font-size:.25em}}.swal2-popup.swal2-toast .swal2-icon.swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line]{top:.875em;width:1.375em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:.3125em}.swal2-popup.swal2-toast .swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:.3125em}.swal2-popup.swal2-toast .swal2-actions{flex-basis:auto!important;width:auto;height:auto;margin:0 .3125em;padding:0}.swal2-popup.swal2-toast .swal2-styled{margin:.125em .3125em;padding:.3125em .625em;font-size:1em}.swal2-popup.swal2-toast .swal2-styled:focus{box-shadow:0 0 0 1px #fff,0 0 0 3px rgba(100,150,200,.5)}.swal2-popup.swal2-toast .swal2-success{border-color:#a5dc86}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line]{position:absolute;width:1.6em;height:3em;transform:rotate(45deg);border-radius:50%}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.8em;left:-.5em;transform:rotate(-45deg);transform-origin:2em 2em;border-radius:4em 0 0 4em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.25em;left:.9375em;transform-origin:0 1.5em;border-radius:0 4em 4em 0}.swal2-popup.swal2-toast .swal2-success .swal2-success-ring{width:2em;height:2em}.swal2-popup.swal2-toast .swal2-success .swal2-success-fix{top:0;left:.4375em;width:.4375em;height:2.6875em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line]{height:.3125em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=tip]{top:1.125em;left:.1875em;width:.75em}.swal2-popup.swal2-toast .swal2-success [class^=swal2-success-line][class$=long]{top:.9375em;right:.1875em;width:1.375em}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-toast-animate-success-line-tip .75s;animation:swal2-toast-animate-success-line-tip .75s}.swal2-popup.swal2-toast .swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-toast-animate-success-line-long .75s;animation:swal2-toast-animate-success-line-long .75s}.swal2-popup.swal2-toast.swal2-show{-webkit-animation:swal2-toast-show .5s;animation:swal2-toast-show .5s}.swal2-popup.swal2-toast.swal2-hide{-webkit-animation:swal2-toast-hide .1s forwards;animation:swal2-toast-hide .1s forwards}.swal2-container{display:flex;position:fixed;z-index:1060;top:0;right:0;bottom:0;left:0;flex-direction:row;align-items:center;justify-content:center;padding:.625em;overflow-x:hidden;transition:background-color .1s;-webkit-overflow-scrolling:touch}.swal2-container.swal2-backdrop-show,.swal2-container.swal2-noanimation{background:rgba(0,0,0,.4)}.swal2-container.swal2-backdrop-hide{background:0 0!important}.swal2-container.swal2-top{align-items:flex-start}.swal2-container.swal2-top-left,.swal2-container.swal2-top-start{align-items:flex-start;justify-content:flex-start}.swal2-container.swal2-top-end,.swal2-container.swal2-top-right{align-items:flex-start;justify-content:flex-end}.swal2-container.swal2-center{align-items:center}.swal2-container.swal2-center-left,.swal2-container.swal2-center-start{align-items:center;justify-content:flex-start}.swal2-container.swal2-center-end,.swal2-container.swal2-center-right{align-items:center;justify-content:flex-end}.swal2-container.swal2-bottom{align-items:flex-end}.swal2-container.swal2-bottom-left,.swal2-container.swal2-bottom-start{align-items:flex-end;justify-content:flex-start}.swal2-container.swal2-bottom-end,.swal2-container.swal2-bottom-right{align-items:flex-end;justify-content:flex-end}.swal2-container.swal2-bottom-end>:first-child,.swal2-container.swal2-bottom-left>:first-child,.swal2-container.swal2-bottom-right>:first-child,.swal2-container.swal2-bottom-start>:first-child,.swal2-container.swal2-bottom>:first-child{margin-top:auto}.swal2-container.swal2-grow-fullscreen>.swal2-modal{display:flex!important;flex:1;align-self:stretch;justify-content:center}.swal2-container.swal2-grow-row>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-grow-column{flex:1;flex-direction:column}.swal2-container.swal2-grow-column.swal2-bottom,.swal2-container.swal2-grow-column.swal2-center,.swal2-container.swal2-grow-column.swal2-top{align-items:center}.swal2-container.swal2-grow-column.swal2-bottom-left,.swal2-container.swal2-grow-column.swal2-bottom-start,.swal2-container.swal2-grow-column.swal2-center-left,.swal2-container.swal2-grow-column.swal2-center-start,.swal2-container.swal2-grow-column.swal2-top-left,.swal2-container.swal2-grow-column.swal2-top-start{align-items:flex-start}.swal2-container.swal2-grow-column.swal2-bottom-end,.swal2-container.swal2-grow-column.swal2-bottom-right,.swal2-container.swal2-grow-column.swal2-center-end,.swal2-container.swal2-grow-column.swal2-center-right,.swal2-container.swal2-grow-column.swal2-top-end,.swal2-container.swal2-grow-column.swal2-top-right{align-items:flex-end}.swal2-container.swal2-grow-column>.swal2-modal{display:flex!important;flex:1;align-content:center;justify-content:center}.swal2-container.swal2-no-transition{transition:none!important}.swal2-container:not(.swal2-top):not(.swal2-top-start):not(.swal2-top-end):not(.swal2-top-left):not(.swal2-top-right):not(.swal2-center-start):not(.swal2-center-end):not(.swal2-center-left):not(.swal2-center-right):not(.swal2-bottom):not(.swal2-bottom-start):not(.swal2-bottom-end):not(.swal2-bottom-left):not(.swal2-bottom-right):not(.swal2-grow-fullscreen)>.swal2-modal{margin:auto}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-container .swal2-modal{margin:0!important}}.swal2-popup{display:none;position:relative;box-sizing:border-box;flex-direction:column;justify-content:center;width:32em;max-width:100%;padding:1.25em;border:none;border-radius:5px;background:#fff;font-family:inherit;font-size:1rem}.swal2-popup:focus{outline:0}.swal2-popup.swal2-loading{overflow-y:hidden}.swal2-header{display:flex;flex-direction:column;align-items:center;padding:0 1.8em}.swal2-title{position:relative;max-width:100%;margin:0 0 .4em;padding:0;color:#595959;font-size:1.875em;font-weight:600;text-align:center;text-transform:none;word-wrap:break-word}.swal2-actions{display:flex;z-index:1;box-sizing:border-box;flex-wrap:wrap;align-items:center;justify-content:center;width:100%;margin:1.25em auto 0;padding:0 1.6em}.swal2-actions:not(.swal2-loading) .swal2-styled[disabled]{opacity:.4}.swal2-actions:not(.swal2-loading) .swal2-styled:hover{background-image:linear-gradient(rgba(0,0,0,.1),rgba(0,0,0,.1))}.swal2-actions:not(.swal2-loading) .swal2-styled:active{background-image:linear-gradient(rgba(0,0,0,.2),rgba(0,0,0,.2))}.swal2-loader{display:none;align-items:center;justify-content:center;width:2.2em;height:2.2em;margin:0 1.875em;-webkit-animation:swal2-rotate-loading 1.5s linear 0s infinite normal;animation:swal2-rotate-loading 1.5s linear 0s infinite normal;border-width:.25em;border-style:solid;border-radius:100%;border-color:#2778c4 transparent #2778c4 transparent}.swal2-styled{margin:.3125em;padding:.625em 1.1em;box-shadow:none;font-weight:500}.swal2-styled:not([disabled]){cursor:pointer}.swal2-styled.swal2-confirm{border:0;border-radius:.25em;background:initial;background-color:#2778c4;color:#fff;font-size:1.0625em}.swal2-styled.swal2-deny{border:0;border-radius:.25em;background:initial;background-color:#d14529;color:#fff;font-size:1.0625em}.swal2-styled.swal2-cancel{border:0;border-radius:.25em;background:initial;background-color:#757575;color:#fff;font-size:1.0625em}.swal2-styled:focus{outline:0;box-shadow:0 0 0 3px rgba(100,150,200,.5)}.swal2-styled::-moz-focus-inner{border:0}.swal2-footer{justify-content:center;margin:1.25em 0 0;padding:1em 0 0;border-top:1px solid #eee;color:#545454;font-size:1em}.swal2-timer-progress-bar-container{position:absolute;right:0;bottom:0;left:0;height:.25em;overflow:hidden;border-bottom-right-radius:5px;border-bottom-left-radius:5px}.swal2-timer-progress-bar{width:100%;height:.25em;background:rgba(0,0,0,.2)}.swal2-image{max-width:100%;margin:1.25em auto}.swal2-close{position:absolute;z-index:2;top:0;right:0;align-items:center;justify-content:center;width:1.2em;height:1.2em;padding:0;overflow:hidden;transition:color .1s ease-out;border:none;border-radius:5px;background:0 0;color:#ccc;font-family:serif;font-size:2.5em;line-height:1.2;cursor:pointer}.swal2-close:hover{transform:none;background:0 0;color:#f27474}.swal2-close:focus{outline:0;box-shadow:inset 0 0 0 3px rgba(100,150,200,.5)}.swal2-close::-moz-focus-inner{border:0}.swal2-content{z-index:1;justify-content:center;margin:0;padding:0 1.6em;color:#545454;font-size:1.125em;font-weight:400;line-height:normal;text-align:center;word-wrap:break-word}.swal2-checkbox,.swal2-file,.swal2-input,.swal2-radio,.swal2-select,.swal2-textarea{margin:1em auto}.swal2-file,.swal2-input,.swal2-textarea{box-sizing:border-box;width:100%;transition:border-color .3s,box-shadow .3s;border:1px solid #d9d9d9;border-radius:.1875em;background:inherit;box-shadow:inset 0 1px 1px rgba(0,0,0,.06);color:inherit;font-size:1.125em}.swal2-file.swal2-inputerror,.swal2-input.swal2-inputerror,.swal2-textarea.swal2-inputerror{border-color:#f27474!important;box-shadow:0 0 2px #f27474!important}.swal2-file:focus,.swal2-input:focus,.swal2-textarea:focus{border:1px solid #b4dbed;outline:0;box-shadow:0 0 0 3px rgba(100,150,200,.5)}.swal2-file::-moz-placeholder,.swal2-input::-moz-placeholder,.swal2-textarea::-moz-placeholder{color:#ccc}.swal2-file:-ms-input-placeholder,.swal2-input:-ms-input-placeholder,.swal2-textarea:-ms-input-placeholder{color:#ccc}.swal2-file::placeholder,.swal2-input::placeholder,.swal2-textarea::placeholder{color:#ccc}.swal2-range{margin:1em auto;background:#fff}.swal2-range input{width:80%}.swal2-range output{width:20%;color:inherit;font-weight:600;text-align:center}.swal2-range input,.swal2-range output{height:2.625em;padding:0;font-size:1.125em;line-height:2.625em}.swal2-input{height:2.625em;padding:0 .75em}.swal2-input[type=number]{max-width:10em}.swal2-file{background:inherit;font-size:1.125em}.swal2-textarea{height:6.75em;padding:.75em}.swal2-select{min-width:50%;max-width:100%;padding:.375em .625em;background:inherit;color:inherit;font-size:1.125em}.swal2-checkbox,.swal2-radio{align-items:center;justify-content:center;background:#fff;color:inherit}.swal2-checkbox label,.swal2-radio label{margin:0 .6em;font-size:1.125em}.swal2-checkbox input,.swal2-radio input{margin:0 .4em}.swal2-input-label{display:flex;justify-content:center;margin:1em auto}.swal2-validation-message{display:none;align-items:center;justify-content:center;margin:0 -2.7em;padding:.625em;overflow:hidden;background:#f0f0f0;color:#666;font-size:1em;font-weight:300}.swal2-validation-message::before{content:"!";display:inline-block;width:1.5em;min-width:1.5em;height:1.5em;margin:0 .625em;border-radius:50%;background-color:#f27474;color:#fff;font-weight:600;line-height:1.5em;text-align:center}.swal2-icon{position:relative;box-sizing:content-box;justify-content:center;width:5em;height:5em;margin:1.25em auto 1.875em;border:.25em solid transparent;border-radius:50%;font-family:inherit;line-height:5em;cursor:default;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.swal2-icon .swal2-icon-content{display:flex;align-items:center;font-size:3.75em}.swal2-icon.swal2-error{border-color:#f27474;color:#f27474}.swal2-icon.swal2-error .swal2-x-mark{position:relative;flex-grow:1}.swal2-icon.swal2-error [class^=swal2-x-mark-line]{display:block;position:absolute;top:2.3125em;width:2.9375em;height:.3125em;border-radius:.125em;background-color:#f27474}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=left]{left:1.0625em;transform:rotate(45deg)}.swal2-icon.swal2-error [class^=swal2-x-mark-line][class$=right]{right:1em;transform:rotate(-45deg)}.swal2-icon.swal2-error.swal2-icon-show{-webkit-animation:swal2-animate-error-icon .5s;animation:swal2-animate-error-icon .5s}.swal2-icon.swal2-error.swal2-icon-show .swal2-x-mark{-webkit-animation:swal2-animate-error-x-mark .5s;animation:swal2-animate-error-x-mark .5s}.swal2-icon.swal2-warning{border-color:#facea8;color:#f8bb86}.swal2-icon.swal2-info{border-color:#9de0f6;color:#3fc3ee}.swal2-icon.swal2-question{border-color:#c9dae1;color:#87adbd}.swal2-icon.swal2-success{border-color:#a5dc86;color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-circular-line]{position:absolute;width:3.75em;height:7.5em;transform:rotate(45deg);border-radius:50%}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=left]{top:-.4375em;left:-2.0635em;transform:rotate(-45deg);transform-origin:3.75em 3.75em;border-radius:7.5em 0 0 7.5em}.swal2-icon.swal2-success [class^=swal2-success-circular-line][class$=right]{top:-.6875em;left:1.875em;transform:rotate(-45deg);transform-origin:0 3.75em;border-radius:0 7.5em 7.5em 0}.swal2-icon.swal2-success .swal2-success-ring{position:absolute;z-index:2;top:-.25em;left:-.25em;box-sizing:content-box;width:100%;height:100%;border:.25em solid rgba(165,220,134,.3);border-radius:50%}.swal2-icon.swal2-success .swal2-success-fix{position:absolute;z-index:1;top:.5em;left:1.625em;width:.4375em;height:5.625em;transform:rotate(-45deg)}.swal2-icon.swal2-success [class^=swal2-success-line]{display:block;position:absolute;z-index:2;height:.3125em;border-radius:.125em;background-color:#a5dc86}.swal2-icon.swal2-success [class^=swal2-success-line][class$=tip]{top:2.875em;left:.8125em;width:1.5625em;transform:rotate(45deg)}.swal2-icon.swal2-success [class^=swal2-success-line][class$=long]{top:2.375em;right:.5em;width:2.9375em;transform:rotate(-45deg)}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-tip{-webkit-animation:swal2-animate-success-line-tip .75s;animation:swal2-animate-success-line-tip .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-line-long{-webkit-animation:swal2-animate-success-line-long .75s;animation:swal2-animate-success-line-long .75s}.swal2-icon.swal2-success.swal2-icon-show .swal2-success-circular-line-right{-webkit-animation:swal2-rotate-success-circular-line 4.25s ease-in;animation:swal2-rotate-success-circular-line 4.25s ease-in}.swal2-progress-steps{flex-wrap:wrap;align-items:center;max-width:100%;margin:0 0 1.25em;padding:0;background:inherit;font-weight:600}.swal2-progress-steps li{display:inline-block;position:relative}.swal2-progress-steps .swal2-progress-step{z-index:20;flex-shrink:0;width:2em;height:2em;border-radius:2em;background:#2778c4;color:#fff;line-height:2em;text-align:center}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step{background:#2778c4}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step{background:#add8e6;color:#fff}.swal2-progress-steps .swal2-progress-step.swal2-active-progress-step~.swal2-progress-step-line{background:#add8e6}.swal2-progress-steps .swal2-progress-step-line{z-index:10;flex-shrink:0;width:2.5em;height:.4em;margin:0 -1px;background:#2778c4}[class^=swal2]{-webkit-tap-highlight-color:transparent}.swal2-show{-webkit-animation:swal2-show .3s;animation:swal2-show .3s}.swal2-hide{-webkit-animation:swal2-hide .15s forwards;animation:swal2-hide .15s forwards}.swal2-noanimation{transition:none}.swal2-scrollbar-measure{position:absolute;top:-9999px;width:50px;height:50px;overflow:scroll}.swal2-rtl .swal2-close{right:auto;left:0}.swal2-rtl .swal2-timer-progress-bar{right:0;left:auto}@supports (-ms-accelerator:true){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@media all and (-ms-high-contrast:none),(-ms-high-contrast:active){.swal2-range input{width:100%!important}.swal2-range output{display:none}}@-webkit-keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@keyframes swal2-toast-show{0%{transform:translateY(-.625em) rotateZ(2deg)}33%{transform:translateY(0) rotateZ(-2deg)}66%{transform:translateY(.3125em) rotateZ(2deg)}100%{transform:translateY(0) rotateZ(0)}}@-webkit-keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@keyframes swal2-toast-hide{100%{transform:rotateZ(1deg);opacity:0}}@-webkit-keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@keyframes swal2-toast-animate-success-line-tip{0%{top:.5625em;left:.0625em;width:0}54%{top:.125em;left:.125em;width:0}70%{top:.625em;left:-.25em;width:1.625em}84%{top:1.0625em;left:.75em;width:.5em}100%{top:1.125em;left:.1875em;width:.75em}}@-webkit-keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@keyframes swal2-toast-animate-success-line-long{0%{top:1.625em;right:1.375em;width:0}65%{top:1.25em;right:.9375em;width:0}84%{top:.9375em;right:0;width:1.125em}100%{top:.9375em;right:.1875em;width:1.375em}}@-webkit-keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@keyframes swal2-show{0%{transform:scale(.7)}45%{transform:scale(1.05)}80%{transform:scale(.95)}100%{transform:scale(1)}}@-webkit-keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@keyframes swal2-hide{0%{transform:scale(1);opacity:1}100%{transform:scale(.5);opacity:0}}@-webkit-keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@keyframes swal2-animate-success-line-tip{0%{top:1.1875em;left:.0625em;width:0}54%{top:1.0625em;left:.125em;width:0}70%{top:2.1875em;left:-.375em;width:3.125em}84%{top:3em;left:1.3125em;width:1.0625em}100%{top:2.8125em;left:.8125em;width:1.5625em}}@-webkit-keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@keyframes swal2-animate-success-line-long{0%{top:3.375em;right:2.875em;width:0}65%{top:3.375em;right:2.875em;width:0}84%{top:2.1875em;right:0;width:3.4375em}100%{top:2.375em;right:.5em;width:2.9375em}}@-webkit-keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@keyframes swal2-rotate-success-circular-line{0%{transform:rotate(-45deg)}5%{transform:rotate(-45deg)}12%{transform:rotate(-405deg)}100%{transform:rotate(-405deg)}}@-webkit-keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@keyframes swal2-animate-error-x-mark{0%{margin-top:1.625em;transform:scale(.4);opacity:0}50%{margin-top:1.625em;transform:scale(.4);opacity:0}80%{margin-top:-.375em;transform:scale(1.15)}100%{margin-top:0;transform:scale(1);opacity:1}}@-webkit-keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@keyframes swal2-animate-error-icon{0%{transform:rotateX(100deg);opacity:0}100%{transform:rotateX(0);opacity:1}}@-webkit-keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}@keyframes swal2-rotate-loading{0%{transform:rotate(0)}100%{transform:rotate(360deg)}}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow:hidden}body.swal2-height-auto{height:auto!important}body.swal2-no-backdrop .swal2-container{top:auto;right:auto;bottom:auto;left:auto;max-width:calc(100% - .625em * 2);background-color:transparent!important}body.swal2-no-backdrop .swal2-container>.swal2-modal{box-shadow:0 0 10px rgba(0,0,0,.4)}body.swal2-no-backdrop .swal2-container.swal2-top{top:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-top-left,body.swal2-no-backdrop .swal2-container.swal2-top-start{top:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-top-end,body.swal2-no-backdrop .swal2-container.swal2-top-right{top:0;right:0}body.swal2-no-backdrop .swal2-container.swal2-center{top:50%;left:50%;transform:translate(-50%,-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-left,body.swal2-no-backdrop .swal2-container.swal2-center-start{top:50%;left:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-center-end,body.swal2-no-backdrop .swal2-container.swal2-center-right{top:50%;right:0;transform:translateY(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom{bottom:0;left:50%;transform:translateX(-50%)}body.swal2-no-backdrop .swal2-container.swal2-bottom-left,body.swal2-no-backdrop .swal2-container.swal2-bottom-start{bottom:0;left:0}body.swal2-no-backdrop .swal2-container.swal2-bottom-end,body.swal2-no-backdrop .swal2-container.swal2-bottom-right{right:0;bottom:0}@media print{body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown){overflow-y:scroll!important}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown)>[aria-hidden=true]{display:none}body.swal2-shown:not(.swal2-no-backdrop):not(.swal2-toast-shown) .swal2-container{position:static!important}}body.swal2-toast-shown .swal2-container{background-color:transparent}body.swal2-toast-shown .swal2-container.swal2-top{top:0;right:auto;bottom:auto;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-top-end,body.swal2-toast-shown .swal2-container.swal2-top-right{top:0;right:0;bottom:auto;left:auto}body.swal2-toast-shown .swal2-container.swal2-top-left,body.swal2-toast-shown .swal2-container.swal2-top-start{top:0;right:auto;bottom:auto;left:0}body.swal2-toast-shown .swal2-container.swal2-center-left,body.swal2-toast-shown .swal2-container.swal2-center-start{top:50%;right:auto;bottom:auto;left:0;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-center{top:50%;right:auto;bottom:auto;left:50%;transform:translate(-50%,-50%)}body.swal2-toast-shown .swal2-container.swal2-center-end,body.swal2-toast-shown .swal2-container.swal2-center-right{top:50%;right:0;bottom:auto;left:auto;transform:translateY(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-left,body.swal2-toast-shown .swal2-container.swal2-bottom-start{top:auto;right:auto;bottom:0;left:0}body.swal2-toast-shown .swal2-container.swal2-bottom{top:auto;right:auto;bottom:0;left:50%;transform:translateX(-50%)}body.swal2-toast-shown .swal2-container.swal2-bottom-end,body.swal2-toast-shown .swal2-container.swal2-bottom-right{top:auto;right:0;bottom:0;left:auto}body.swal2-toast-column .swal2-toast{flex-direction:column;align-items:stretch}body.swal2-toast-column .swal2-toast .swal2-actions{flex:1;align-self:stretch;height:2.2em;margin-top:.3125em}body.swal2-toast-column .swal2-toast .swal2-loading{justify-content:center}body.swal2-toast-column .swal2-toast .swal2-input{height:2em;margin:.3125em auto;font-size:1em}body.swal2-toast-column .swal2-toast .swal2-validation-message{font-size:1em}</style></head><body class="modern-layout " __processed_46d5e78c-023d-4b93-a129-443f02d451c8__="true" bis_register="W3sibWFzdGVyIjp0cnVlLCJleHRlbnNpb25JZCI6ImVwcGlvY2VtaG1ubGJoanBsY2drb2ZjaWllZ29tY29uIiwiYWRibG9ja2VyU3RhdHVzIjp7IkRJU1BMQVkiOiJkaXNhYmxlZCIsIkZBQ0VCT09LIjoiZGlzYWJsZWQiLCJUV0lUVEVSIjoiZGlzYWJsZWQiLCJSRURESVQiOiJkaXNhYmxlZCIsIlBJTlRFUkVTVCI6ImRpc2FibGVkIiwiSU5TVEFHUkFNIjoiZGlzYWJsZWQiLCJUSUtUT0siOiJkaXNhYmxlZCIsIkxJTktFRElOIjoiZGlzYWJsZWQiLCJDT05GSUciOiJkaXNhYmxlZCJ9LCJ2ZXJzaW9uIjoiMi4wLjMzIiwic2NvcmUiOjIwMDMzfV0=">
+<!-- [ Pre-loader ] start -->
+
+<!-- [ Pre-loader ] End --> 
+<!-- [ Mobile header ] start -->
+<div class="pc-mob-header pc-header" bis_skin_checked="1">
+  <div class="pcm-logo" bis_skin_checked="1"> <img src="https://hrm.anhtester.com/public/uploads/logo/anhtester_logo_512.png" alt="" class="logo logo-lg"> </div>
+  <div class="pcm-toolbar" bis_skin_checked="1"> <a href="#!" class="pc-head-link" id="mobile-collapse">
+    <div class="hamburger hamburger--arrowturn" bis_skin_checked="1">
+      <div class="hamburger-box" bis_skin_checked="1">
+        <div class="hamburger-inner" bis_skin_checked="1"></div>
+      </div>
+    </div>
+    </a> <a href="#!" class="pc-head-link" id="headerdrp-collapse"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-align-right"><line x1="21" y1="10" x2="7" y2="10"></line><line x1="21" y1="6" x2="3" y2="6"></line><line x1="21" y1="14" x2="3" y2="14"></line><line x1="21" y1="18" x2="7" y2="18"></line></svg> </a> <a href="#!" class="pc-head-link" id="header-collapse"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-more-vertical"><circle cx="12" cy="12" r="1"></circle><circle cx="12" cy="5" r="1"></circle><circle cx="12" cy="19" r="1"></circle></svg> </a> </div>
+</div>
+<!-- [ Mobile header ] End --> 
+<!-- [ navigation menu ] start -->
+<nav class="pc-sidebar light-sidebar">
+  <div class="navbar-wrapper" bis_skin_checked="1">
+    <div class="navbar-content ps ps--active-y" bis_skin_checked="1">
+      	    <ul class="pc-navbar">
+  <li class="pc-item pc-caption">
+    <label>
+      Your Apps    </label>
+  </li>
+  <!-- Dashboard|Home -->
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/desk" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-home"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></span><span class="pc-mtext">
+    Home    </span></a></li>
+    
+  <!-- Attendance -->
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/attendance-list" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></span><span class="pc-mtext">
+    Attendance    </span></a></li>
+    
+   
+  <!-- Projects -->
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/projects-list" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-layers"><polygon points="12 2 2 7 12 12 22 7 12 2"></polygon><polyline points="2 17 12 22 22 17"></polyline><polyline points="2 12 12 17 22 12"></polyline></svg></span><span class="pc-mtext">
+    Projects    </span></a></li>
+    
+  <!-- Tasks -->
+   
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/tasks-list" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg></span><span class="pc-mtext">
+    Tasks    </span></a></li>
+    <!-- Payroll -->
+   
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/payslip-history" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-speaker"><rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect><circle cx="12" cy="14" r="4"></circle><line x1="12" y1="6" x2="12.01" y2="6"></line></svg></span><span class="pc-mtext">
+    Payroll    </span></a></li>
+      <!-- Requests -->
+  <li class="pc-item "> <a href="#" class="pc-link sidenav-toggle"> <span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3.01" y2="6"></line><line x1="3" y1="12" x2="3.01" y2="12"></line><line x1="3" y1="18" x2="3.01" y2="18"></line></svg></span>
+    Requests    <span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span> </a>
+    <ul class="pc-submenu">
+            <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/leave-list">
+        Leave Request        </a> </li>
+      	        <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/expense-list">
+        Expense Claim        </a> </li>
+      	        <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/loan-request">
+        Request Loan        </a> </li>
+            	        <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/business-travel">
+        Travel Request        </a> </li>
+                        <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/advance-salary">
+        Advance Salary        </a> </li>
+                  <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/overtime-request">
+        Overtime Request        </a> </li>
+          </ul>
+  </li>
+    <!-- Tickets -->
+   
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/support-tickets" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-help-circle"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg></span><span class="pc-mtext">
+    Helpdesk    </span></a></li>
+       
+  <!-- Training Session -->
+  <li class="pc-item"> <a href="https://hrm.anhtester.com/erp/training-sessions" class="pc-link"> <span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-target"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg></span><span class="pc-mtext">
+    Training Sessions    </span> </a> </li>
+        <li class="pc-item pc-caption">
+    <label>
+      Your Company    </label>
+  </li>
+      <!-- Employees -->
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/staff-list" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-users"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg></span><span class="pc-mtext">
+    Employees    </span></a></li>
+        <!-- Recruitment -->
+  <li class="pc-item"> <a href="https://hrm.anhtester.com/erp/jobs-list" class="pc-link"> <span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-gitlab"><path d="M22.65 14.39L12 22.13 1.35 14.39a.84.84 0 0 1-.3-.94l1.22-3.78 2.44-7.51A.42.42 0 0 1 4.82 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.49h8.1l2.44-7.51A.42.42 0 0 1 18.6 2a.43.43 0 0 1 .58 0 .42.42 0 0 1 .11.18l2.44 7.51L23 13.45a.84.84 0 0 1-.35.94z"></path></svg></span><span class="pc-mtext">
+    Recruitment (ATS)    </span> </a> </li>
+        <!-- CoreHR -->
+  <li class="pc-item "> <a href="#" class="pc-link sidenav-toggle"> <span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-crosshair"><circle cx="12" cy="12" r="10"></circle><line x1="22" y1="12" x2="18" y2="12"></line><line x1="6" y1="12" x2="2" y2="12"></line><line x1="12" y1="6" x2="12" y2="2"></line><line x1="12" y1="22" x2="12" y2="18"></line></svg></span>
+    Core HR    <span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span> </a>
+    <ul class="pc-submenu">
+            <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/departments-list">
+        Department        </a> </li>
+                   <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/designation-list">
+        Designation        </a> </li>
+                   <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/policies-list">
+        Policies        </a> </li>
+                   <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/news-list">
+        Make Announcement        </a> </li>
+                     <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/chart">
+        Organization Chart        </a> </li>
+           </ul>
+  </li>
+      <!-- Finance -->
+  <li class="pc-item"> <a href="https://hrm.anhtester.com/erp/accounts-list" class="pc-link"> <span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-credit-card"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"></rect><line x1="1" y1="10" x2="23" y2="10"></line></svg></span><span class="pc-mtext">
+    Finance    </span> </a> </li>
+    
+      
+  <!-- Performance -->
+  <li class=" pc-item"> <a href="#" class="pc-link sidenav-toggle"> <span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-aperture"><circle cx="12" cy="12" r="10"></circle><line x1="14.31" y1="8" x2="20.05" y2="17.94"></line><line x1="9.69" y1="8" x2="21.17" y2="8"></line><line x1="7.38" y1="12" x2="13.12" y2="2.06"></line><line x1="9.69" y1="16" x2="3.95" y2="6.06"></line><line x1="14.31" y1="16" x2="2.83" y2="16"></line><line x1="16.62" y1="12" x2="10.88" y2="21.94"></line></svg></span>
+    Performance (PMS)    <span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span> </a>
+    <ul class="pc-submenu">
+            <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/performance-indicator-list">
+        KPI (Indicator)        </a> </li>
+                  <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/performance-appraisal-list">
+        KPA (Appraisal)        </a> </li>
+                  <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/competencies">
+        Competencies        </a> </li>
+                  <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/track-goals">
+        Track Goals (OKRs)        </a> </li>
+                  <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/goal-type">
+        Goal Type        </a> </li>
+                  <li class="pc-item "> <a class="pc-link" href="https://hrm.anhtester.com/erp/goals-calendar">
+        Goals Calendar        </a> </li>
+          </ul>
+  </li>
+            <li class="pc-item pc-hasmenu active pc-trigger">
+        <a href="#!" class="pc-link"><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></span><span class="pc-mtext">Inventory Control</span><span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span></a>
+        <ul class="pc-submenu">
+        	            <li class="pc-item active"><a class="pc-link" href="https://hrm.anhtester.com/erp/warehouse-list">Warehouses</a></li>
+                                    <li class="pc-item pc-hasmenu">
+                <a href="#!" class="pc-link">Products<span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span></a>
+                <ul class="pc-submenu">
+                	                    <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/product-list">Products</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/out-of-stock-products">Out of Stock</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/expired-products">Expired Products</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/tax-type">Product Tax</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/products-category">Product Category</a></li>
+                                    </ul>
+            </li>
+                                    <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/suppliers-list">Suppliers</a></li>
+                                    <li class="pc-item pc-hasmenu">
+                <a href="#!" class="pc-link">Purchases<span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span></a>
+                <ul class="pc-submenu">
+                	                    <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/create-purchase">New Purchase</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/stock-purchases">Purchase List</a></li>
+                                    </ul>
+            </li>
+                                    <li class="pc-item pc-hasmenu">
+                <a href="#!" class="pc-link">Sales Order<span class="pc-arrow"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-right"><polyline points="9 18 15 12 9 6"></polyline></svg></span></a>
+                <ul class="pc-submenu">
+                                        <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/stock-orders">Manage Orders</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/create-order">Add New Order</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/paid-orders">Paid Orders</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/unpaid-orders">Unpaid Orders</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/packed-orders">Packed Orders</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/delivered-orders">Delivered Orders</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/cancelled-orders">Cancelled Orders</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/order-quotes">Quote Orders</a></li>
+                                                            <li class="pc-item"><a class="pc-link" href="https://hrm.anhtester.com/erp/create-quote">Add Order Quote</a></li>
+                                    </ul>
+            </li>
+                    </ul>
+    </li>
+           
+  <!-- Clients -->
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/clients-list" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-check"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg></span><span class="pc-mtext">
+    Manage Clients    </span></a></li>
+     
+  <!-- Leads -->
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/leads-list" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg></span><span class="pc-mtext">
+    Leads    </span></a></li>
+    
+     
+  <!-- Invoices -->
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/invoices-list" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span><span class="pc-mtext">
+    Invoices    </span></a></li>
+     
+  <!-- Estimates -->
+  <li class="pc-item"><a href="https://hrm.anhtester.com/erp/estimates-list" class="pc-link "><span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg></span><span class="pc-mtext">
+    Estimates    </span></a></li>
+       
+  <!-- Disciplinary -->
+  <li class="pc-item"> <a href="https://hrm.anhtester.com/erp/disciplinary-cases" class="pc-link"> <span class="pc-micon"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-alert-circle"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg></span><span class="pc-mtext">
+    Disciplinary Cases    </span> </a> </li>
+  </ul>
+    <div class="ps__rail-x" style="left: 0px; bottom: 0px;" bis_skin_checked="1"><div class="ps__thumb-x" tabindex="0" bis_skin_checked="1" style="left: 0px; width: 0px;"></div></div><div class="ps__rail-y" style="top: 0px; height: 764px; right: 0px;" bis_skin_checked="1"><div class="ps__thumb-y" tabindex="0" bis_skin_checked="1" style="top: 0px; height: 471px;"></div></div></div>
+  </div>
+</nav>
+<!-- [ navigation menu ] end --> 
+<!-- [ Header ] start -->
+<header class="pc-header bg-dark">
+    <div class="header-wrapper" bis_skin_checked="1">
+               <div class="m-header d-flex align-items-center" bis_skin_checked="1">
+            <a href="https://hrm.anhtester.com/erp/desk" class="b-brand">
+                <img src="https://hrm.anhtester.com/public/uploads/logo/anhtester_logo_512.png" alt="" class="logo logo-lg" height="40" width="138">
+            </a>
+        </div>
+                <div class="mr-auto pc-mob-drp" bis_skin_checked="1">
+            <ul class="list-unstyled">
+                                <li class="pc-h-item">
+                    <a class="pc-head-link active arrow-none mr-0" data-toggle="tooltip" data-placement="top" title="" href="https://hrm.anhtester.com/erp/my-profile" data-original-title="Account Settings">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-check"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><polyline points="17 11 19 13 23 9"></polyline></svg>
+                    </a>
+                </li> 
+                <li class="dropdown pc-h-item">
+                    <a class="pc-head-link active dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <span data-toggle="tooltip" data-placement="top" title="" data-original-title="Apps">Apps</span>
+                    </a>
+                    <div class="dropdown-menu pc-h-dropdown" bis_skin_checked="1">
+                     	                                                                                                                        <a href="https://hrm.anhtester.com/erp/events-list" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-disc"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
+                            <span>Events</span>
+                        </a>
+                                                						                        <a href="https://hrm.anhtester.com/erp/holidays-list" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+                            <span>Holidays</span>
+                        </a>
+                        						                        <a href="https://hrm.anhtester.com/erp/visitors-list" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-plus"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="20" y1="8" x2="20" y2="14"></line><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                            <span>Visitor Book</span>
+                        </a>
+                                                                                                <a href="https://hrm.anhtester.com/erp/meeting-list" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                            <span>Conference Booking</span>
+                        </a>
+                                                                        						                        <a href="https://hrm.anhtester.com/erp/upload-files" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-plus"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="12" y1="18" x2="12" y2="12"></line><line x1="9" y1="15" x2="15" y2="15"></line></svg>
+                            <span>Documents Manager</span>
+                        </a>
+                                                                        <div class="dropdown-divider" bis_skin_checked="1"></div>
+						                        <a href="https://hrm.anhtester.com/erp/assets-list" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-command"><path d="M18 3a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3H6a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3V6a3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3h12a3 3 0 0 0 3-3 3 3 0 0 0-3-3z"></path></svg>
+                            <span>Assets</span>
+                        </a>
+                                                						                        <a href="https://hrm.anhtester.com/erp/awards-list" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-award"><circle cx="12" cy="8" r="7"></circle><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline></svg>
+                            <span>Awards</span>
+                        </a>
+                                                                                                <a href="https://hrm.anhtester.com/erp/transfers-list" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minimize-2"><polyline points="4 14 10 14 10 20"></polyline><polyline points="20 10 14 10 14 4"></polyline><line x1="14" y1="10" x2="21" y2="3"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                            <span>Transfers</span>
+                        </a>
+                        						                        <a href="https://hrm.anhtester.com/erp/complaints-list" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-edit"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"></path><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"></path></svg>
+                            <span>Complaints</span>
+                        </a>
+                        						                        <a href="https://hrm.anhtester.com/erp/resignation-list" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user-minus"><path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="8.5" cy="7" r="4"></circle><line x1="23" y1="11" x2="17" y2="11"></line></svg>
+                            <span>Resignations</span>
+                        </a>
+                        
+                                               <a href="https://hrm.anhtester.com/erp/custom-fields" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                            <span>Custom Fields</span>
+                        </a>
+                                               <div class="dropdown-divider" bis_skin_checked="1"></div>
+                                                                  </div>
+                </li>
+                                <li class="pc-h-item">
+                    <a class="pc-head-link active arrow-none mr-0" data-toggle="tooltip" data-placement="top" title="" href="https://hrm.anhtester.com/erp/system-calendar" data-original-title="System Calendar">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                    </a>
+                </li> 
+                				                <li class="pc-h-item">
+                    <a class="pc-head-link active arrow-none mr-0" data-toggle="tooltip" data-placement="top" title="" href="https://hrm.anhtester.com/erp/system-reports" data-original-title="System Reports">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-pie-chart"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"></path><path d="M22 12A10 10 0 0 0 12 2v10z"></path></svg>
+                    </a>
+                </li>
+                                				            </ul>
+        </div>
+        <div class="ml-auto" bis_skin_checked="1">
+            <ul class="list-unstyled">
+                <li class="dropdown pc-h-item">
+                    <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="https://hrm.anhtester.com/public/uploads/languages_flag/en.gif">                    </a>
+                    <div class="dropdown-menu dropdown-menu-right pc-h-dropdown" bis_skin_checked="1">
+                                                <a href="https://hrm.anhtester.com/erp/set-language/en" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/en.gif" width="16" height="11">
+                            <span>English</span>
+                        </a>
+                                                <a href="https://hrm.anhtester.com/erp/set-language/ru" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/ru.gif" width="16" height="11">
+                            <span>Russian</span>
+                        </a>
+                                                <a href="https://hrm.anhtester.com/erp/set-language/nl" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/nl.gif" width="16" height="11">
+                            <span>Dutch</span>
+                        </a>
+                                                <a href="https://hrm.anhtester.com/erp/set-language/br" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/br.gif" width="16" height="11">
+                            <span>Portuguese</span>
+                        </a>
+                                                <a href="https://hrm.anhtester.com/erp/set-language/vn" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/vn.gif" width="16" height="11">
+                            <span>Vietnamese</span>
+                        </a>
+                                                <a href="https://hrm.anhtester.com/erp/set-language/es" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/es.gif" width="16" height="11">
+                            <span>Spanish</span>
+                        </a>
+                                                <a href="https://hrm.anhtester.com/erp/set-language/it" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/it.gif" width="16" height="11">
+                            <span>Italiano</span>
+                        </a>
+                                                <a href="https://hrm.anhtester.com/erp/set-language/tr" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/tr.gif" width="16" height="11">
+                            <span>Turkish</span>
+                        </a>
+                                                <a href="https://hrm.anhtester.com/erp/set-language/fr" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/fr.gif" width="16" height="11">
+                            <span>French</span>
+                        </a>
+                                                <a href="https://hrm.anhtester.com/erp/set-language/cn" class="dropdown-item">
+                            <img src="https://hrm.anhtester.com/public/uploads/languages_flag/cn.gif" width="16" height="11">
+                            <span>Chinese</span>
+                        </a>
+                                            </div>
+                </li>
+                                <li class="pc-h-item">
+                    <a class="pc-head-link mr-0" data-toggle="tooltip" data-placement="top" title="" href="https://hrm.anhtester.com/erp/todo-list" data-original-title="Todo List">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                        <span class="sr-only"></span>
+                    </a>
+                </li>
+                                <li class="dropdown pc-h-item">
+                    <a class="pc-head-link dropdown-toggle arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
+                        <img src="https://hrm.anhtester.com/public/uploads/users/thumb/photo_2025-05-23_16-03-51 (2).jpg" alt="" class="user-avtar">
+                        <span>
+                            <span class="user-name">admin_example hello</span>
+                            <span class="user-desc">admin_example</span>
+                        </span>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right pc-h-dropdown" bis_skin_checked="1">
+                        <div class=" dropdown-header" bis_skin_checked="1">
+                            <h6 class="text-overflow m-0">Welcome !</h6>
+                        </div>
+                        <a href="https://hrm.anhtester.com/erp/my-profile" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <span>My Account</span>
+                        </a>
+                        <a href="https://hrm.anhtester.com/erp/system-logout" class="dropdown-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-power"><path d="M18.36 6.64a9 9 0 1 1-12.73 0"></path><line x1="12" y1="2" x2="12" y2="12"></line></svg>
+                            <span>Logout</span>
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header><!-- [ Header ] end --> 
+
+<!-- [ Main Content ] start -->
+<div class="pc-container" bis_skin_checked="1">
+  <div class="pcoded-content" bis_skin_checked="1"> 
+    <!-- [ breadcrumb ] start -->
+    <div class="page-header" bis_skin_checked="1">
+      <div class="page-block" bis_skin_checked="1">
+        <div class="row align-items-center" bis_skin_checked="1">
+          <div class="col-md-6" bis_skin_checked="1"> 
+            <!--<div class="page-header-title">
+                            <h5>Sample Page</h5>
+                        </div>-->
+            <ul class="breadcrumb">
+              
+                              <li class="breadcrumb-item"><a href="https://hrm.anhtester.com/erp/desk">
+					Home                    </a></li>
+                  <li class="breadcrumb-item">
+                    Warehouses                  </li>
+                            </ul>
+          </div>
+                                        <div class="col-md-6 text-md-right" bis_skin_checked="1"> <a class="btn btn-smb btn-outline-primary rounded-pill" href="https://hrm.anhtester.com/erp/system-logout"><i class="feather icon-power"></i>
+            Logout            </a> </div>
+        </div>
+      </div>
+    </div>
+    <!-- [ breadcrumb ] end --> 
+    <!-- [ Main Content ] start -->
+    
+<div id="add_form" class="add-form collapse show" data-parent="#accordion" style="" bis_skin_checked="1">
+  <div class="card mb-2" bis_skin_checked="1">
+    <div id="accordion" bis_skin_checked="1">
+      <div class="card-header" bis_skin_checked="1">
+        <h5>
+          Add New          Warehouse        </h5>
+        <div class="card-header-right" bis_skin_checked="1"> <a data-toggle="collapse" href="#add_form" aria-expanded="true" class="btn btn-sm waves-effect waves-light btn-primary m-0"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-minus"><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          Hide          </a> </div>
+      </div>
+                  <form action="https://hrm.anhtester.com/erp/warehouse/add_warehouse" name="add_warehouse" id="xin-form" autocomplete="off" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token" value="d621d1a25bc33098b6da37fa925f4b61">
+<input type="hidden" name="user_id" value="1">
+      <div class="card-body" bis_skin_checked="1">
+        <div class="row" bis_skin_checked="1">
+          <div class="col-md-3" bis_skin_checked="1">
+            <div class="form-group" bis_skin_checked="1">
+              <label for="start_date">
+                Warehouse Name                <span class="text-danger">*</span> </label>
+              <input class="form-control" placeholder="Warehouse Name" name="name" type="text" value="">
+            </div>
+          </div>
+          <div class="col-md-3" bis_skin_checked="1">
+            <div class="form-group" bis_skin_checked="1">
+              <label for="contact_number">
+                Contact Number                <span class="text-danger">*</span></label>
+              <input class="form-control" placeholder="Contact Number" name="contact_number" type="text" value="">
+            </div>
+          </div>
+          <div class="col-md-3" bis_skin_checked="1">
+            <div class="form-group" bis_skin_checked="1">
+              <label for="country">
+                Use as pickup location?                <span class="text-danger">*</span> </label>
+              <select class="form-control select2-hidden-accessible" name="pickup_location" data-plugin="select_hrm" data-placeholder="Use as pickup location?" tabindex="-1" aria-hidden="true" data-select2-id="512">
+                <option value="1" data-select2-id="514">
+                Yes                </option>
+                <option value="0">
+                No                </option>
+              </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="513" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-pickup_location-i4-container"><span class="select2-selection__rendered" id="select2-pickup_location-i4-container" role="textbox" aria-readonly="true" title="
+                Yes                ">
+                Yes                </span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+          </div>
+          <div class="col-md-3" bis_skin_checked="1">
+            <div class="form-group" bis_skin_checked="1">
+              <label for="country">
+                Country                <span class="text-danger">*</span> </label>
+              <select class="form-control select2-hidden-accessible" name="country" data-plugin="select_hrm" data-placeholder="Country" tabindex="-1" aria-hidden="true" data-select2-id="760">
+                <option value="" data-select2-id="762">
+                Select One                </option>
+                                <option value="1">
+                Afghanistan                </option>
+                                <option value="2">
+                Albania                </option>
+                                <option value="3">
+                Algeria                </option>
+                                <option value="4">
+                American Samoa                </option>
+                                <option value="5">
+                Andorra                </option>
+                                <option value="6">
+                Angola                </option>
+                                <option value="7">
+                Anguilla                </option>
+                                <option value="8">
+                Antarctica                </option>
+                                <option value="9">
+                Antigua and Barbuda                </option>
+                                <option value="10">
+                Argentina                </option>
+                                <option value="11">
+                Armenia                </option>
+                                <option value="12">
+                Aruba                </option>
+                                <option value="13">
+                Australia                </option>
+                                <option value="14">
+                Austria                </option>
+                                <option value="15">
+                Azerbaijan                </option>
+                                <option value="16">
+                Bahamas                </option>
+                                <option value="17">
+                Bahrain                </option>
+                                <option value="18">
+                Bangladesh                </option>
+                                <option value="19">
+                Barbados                </option>
+                                <option value="20">
+                Belarus                </option>
+                                <option value="21">
+                Belgium                </option>
+                                <option value="22">
+                Belize                </option>
+                                <option value="23">
+                Benin                </option>
+                                <option value="24">
+                Bermuda                </option>
+                                <option value="25">
+                Bhutan                </option>
+                                <option value="26">
+                Bolivia                </option>
+                                <option value="27">
+                Bosnia and Herzegovina                </option>
+                                <option value="28">
+                Botswana                </option>
+                                <option value="29">
+                Bouvet Island                </option>
+                                <option value="30">
+                Brazil                </option>
+                                <option value="31">
+                British Indian Ocean Territory                </option>
+                                <option value="32">
+                Brunei Darussalam                </option>
+                                <option value="33">
+                Bulgaria                </option>
+                                <option value="34">
+                Burkina Faso                </option>
+                                <option value="35">
+                Burundi                </option>
+                                <option value="36">
+                Cambodia                </option>
+                                <option value="37">
+                Cameroon                </option>
+                                <option value="38">
+                Canada                </option>
+                                <option value="39">
+                Cape Verde                </option>
+                                <option value="40">
+                Cayman Islands                </option>
+                                <option value="41">
+                Central African Republic                </option>
+                                <option value="42">
+                Chad                </option>
+                                <option value="43">
+                Chile                </option>
+                                <option value="44">
+                China                </option>
+                                <option value="45">
+                Christmas Island                </option>
+                                <option value="46">
+                Cocos (Keeling) Islands                </option>
+                                <option value="47">
+                Colombia                </option>
+                                <option value="48">
+                Comoros                </option>
+                                <option value="49">
+                Congo                </option>
+                                <option value="50">
+                Cook Islands                </option>
+                                <option value="51">
+                Costa Rica                </option>
+                                <option value="52">
+                Croatia (Hrvatska)                </option>
+                                <option value="53">
+                Cuba                </option>
+                                <option value="54">
+                Cyprus                </option>
+                                <option value="55">
+                Czech Republic                </option>
+                                <option value="56">
+                Denmark                </option>
+                                <option value="57">
+                Djibouti                </option>
+                                <option value="58">
+                Dominica                </option>
+                                <option value="59">
+                Dominican Republic                </option>
+                                <option value="60">
+                East Timor                </option>
+                                <option value="61">
+                Ecuador                </option>
+                                <option value="62">
+                Egypt                </option>
+                                <option value="63">
+                El Salvador                </option>
+                                <option value="64">
+                Equatorial Guinea                </option>
+                                <option value="65">
+                Eritrea                </option>
+                                <option value="66">
+                Estonia                </option>
+                                <option value="67">
+                Ethiopia                </option>
+                                <option value="68">
+                Falkland Islands (Malvinas)                </option>
+                                <option value="69">
+                Faroe Islands                </option>
+                                <option value="70">
+                Fiji                </option>
+                                <option value="71">
+                Finland                </option>
+                                <option value="72">
+                France                </option>
+                                <option value="73">
+                France, Metropolitan                </option>
+                                <option value="74">
+                French Guiana                </option>
+                                <option value="75">
+                French Polynesia                </option>
+                                <option value="76">
+                French Southern Territories                </option>
+                                <option value="77">
+                Gabon                </option>
+                                <option value="78">
+                Gambia                </option>
+                                <option value="79">
+                Georgia                </option>
+                                <option value="80">
+                Germany                </option>
+                                <option value="81">
+                Ghana                </option>
+                                <option value="82">
+                Gibraltar                </option>
+                                <option value="83">
+                Guernsey                </option>
+                                <option value="84">
+                Greece                </option>
+                                <option value="85">
+                Greenland                </option>
+                                <option value="86">
+                Grenada                </option>
+                                <option value="87">
+                Guadeloupe                </option>
+                                <option value="88">
+                Guam                </option>
+                                <option value="89">
+                Guatemala                </option>
+                                <option value="90">
+                Guinea                </option>
+                                <option value="91">
+                Guinea-Bissau                </option>
+                                <option value="92">
+                Guyana                </option>
+                                <option value="93">
+                Haiti                </option>
+                                <option value="94">
+                Heard and Mc Donald Islands                </option>
+                                <option value="95">
+                Honduras                </option>
+                                <option value="96">
+                Hong Kong                </option>
+                                <option value="97">
+                Hungary                </option>
+                                <option value="98">
+                Iceland                </option>
+                                <option value="99">
+                India                </option>
+                                <option value="100">
+                Isle of Man                </option>
+                                <option value="101">
+                Indonesia                </option>
+                                <option value="102">
+                Iran (Islamic Republic of)                </option>
+                                <option value="103">
+                Iraq                </option>
+                                <option value="104">
+                Ireland                </option>
+                                <option value="105">
+                Israel                </option>
+                                <option value="106">
+                Italy                </option>
+                                <option value="107">
+                Ivory Coast                </option>
+                                <option value="108">
+                Jersey                </option>
+                                <option value="109">
+                Jamaica                </option>
+                                <option value="110">
+                Japan                </option>
+                                <option value="111">
+                Jordan                </option>
+                                <option value="112">
+                Kazakhstan                </option>
+                                <option value="113">
+                Kenya                </option>
+                                <option value="114">
+                Kiribati                </option>
+                                <option value="115">
+                Korea, Democratic People's Republic of                </option>
+                                <option value="116">
+                Korea, Republic of                </option>
+                                <option value="117">
+                Kosovo                </option>
+                                <option value="118">
+                Kuwait                </option>
+                                <option value="119">
+                Kyrgyzstan                </option>
+                                <option value="120">
+                Lao People's Democratic Republic                </option>
+                                <option value="121">
+                Latvia                </option>
+                                <option value="122">
+                Lebanon                </option>
+                                <option value="123">
+                Lesotho                </option>
+                                <option value="124">
+                Liberia                </option>
+                                <option value="125">
+                Libyan Arab Jamahiriya                </option>
+                                <option value="126">
+                Liechtenstein                </option>
+                                <option value="127">
+                Lithuania                </option>
+                                <option value="128">
+                Luxembourg                </option>
+                                <option value="129">
+                Macau                </option>
+                                <option value="130">
+                Macedonia                </option>
+                                <option value="131">
+                Madagascar                </option>
+                                <option value="132">
+                Malawi                </option>
+                                <option value="133">
+                Malaysia                </option>
+                                <option value="134">
+                Maldives                </option>
+                                <option value="135">
+                Mali                </option>
+                                <option value="136">
+                Malta                </option>
+                                <option value="137">
+                Marshall Islands                </option>
+                                <option value="138">
+                Martinique                </option>
+                                <option value="139">
+                Mauritania                </option>
+                                <option value="140">
+                Mauritius                </option>
+                                <option value="141">
+                Mayotte                </option>
+                                <option value="142">
+                Mexico                </option>
+                                <option value="143">
+                Micronesia, Federated States of                </option>
+                                <option value="144">
+                Moldova, Republic of                </option>
+                                <option value="145">
+                Monaco                </option>
+                                <option value="146">
+                Mongolia                </option>
+                                <option value="147">
+                Montenegro                </option>
+                                <option value="148">
+                Montserrat                </option>
+                                <option value="149">
+                Morocco                </option>
+                                <option value="150">
+                Mozambique                </option>
+                                <option value="151">
+                Myanmar                </option>
+                                <option value="152">
+                Namibia                </option>
+                                <option value="153">
+                Nauru                </option>
+                                <option value="154">
+                Nepal                </option>
+                                <option value="155">
+                Netherlands                </option>
+                                <option value="156">
+                Netherlands Antilles                </option>
+                                <option value="157">
+                New Caledonia                </option>
+                                <option value="158">
+                New Zealand                </option>
+                                <option value="159">
+                Nicaragua                </option>
+                                <option value="160">
+                Niger                </option>
+                                <option value="161">
+                Nigeria                </option>
+                                <option value="162">
+                Niue                </option>
+                                <option value="163">
+                Norfolk Island                </option>
+                                <option value="164">
+                Northern Mariana Islands                </option>
+                                <option value="165">
+                Norway                </option>
+                                <option value="166">
+                Oman                </option>
+                                <option value="167">
+                Pakistan                </option>
+                                <option value="168">
+                Palau                </option>
+                                <option value="169">
+                Palestine                </option>
+                                <option value="170">
+                Panama                </option>
+                                <option value="171">
+                Papua New Guinea                </option>
+                                <option value="172">
+                Paraguay                </option>
+                                <option value="173">
+                Peru                </option>
+                                <option value="174">
+                Philippines                </option>
+                                <option value="175">
+                Pitcairn                </option>
+                                <option value="176">
+                Poland                </option>
+                                <option value="177">
+                Portugal                </option>
+                                <option value="178">
+                Puerto Rico                </option>
+                                <option value="179">
+                Qatar                </option>
+                                <option value="180">
+                Reunion                </option>
+                                <option value="181">
+                Romania                </option>
+                                <option value="182">
+                Russian Federation                </option>
+                                <option value="183">
+                Rwanda                </option>
+                                <option value="184">
+                Saint Kitts and Nevis                </option>
+                                <option value="185">
+                Saint Lucia                </option>
+                                <option value="186">
+                Saint Vincent and the Grenadines                </option>
+                                <option value="187">
+                Samoa                </option>
+                                <option value="188">
+                San Marino                </option>
+                                <option value="189">
+                Sao Tome and Principe                </option>
+                                <option value="190">
+                Saudi Arabia                </option>
+                                <option value="191">
+                Senegal                </option>
+                                <option value="192">
+                Serbia                </option>
+                                <option value="193">
+                Seychelles                </option>
+                                <option value="194">
+                Sierra Leone                </option>
+                                <option value="195">
+                Singapore                </option>
+                                <option value="196">
+                Slovakia                </option>
+                                <option value="197">
+                Slovenia                </option>
+                                <option value="198">
+                Solomon Islands                </option>
+                                <option value="199">
+                Somalia                </option>
+                                <option value="200">
+                South Africa                </option>
+                                <option value="201">
+                South Georgia South Sandwich Islands                </option>
+                                <option value="202">
+                Spain                </option>
+                                <option value="203">
+                Sri Lanka                </option>
+                                <option value="204">
+                St. Helena                </option>
+                                <option value="205">
+                St. Pierre and Miquelon                </option>
+                                <option value="206">
+                Sudan                </option>
+                                <option value="207">
+                Suriname                </option>
+                                <option value="208">
+                Svalbard and Jan Mayen Islands                </option>
+                                <option value="209">
+                Swaziland                </option>
+                                <option value="210">
+                Sweden                </option>
+                                <option value="211">
+                Switzerland                </option>
+                                <option value="212">
+                Syrian Arab Republic                </option>
+                                <option value="213">
+                Taiwan                </option>
+                                <option value="214">
+                Tajikistan                </option>
+                                <option value="215">
+                Tanzania, United Republic of                </option>
+                                <option value="216">
+                Thailand                </option>
+                                <option value="217">
+                Togo                </option>
+                                <option value="218">
+                Tokelau                </option>
+                                <option value="219">
+                Tonga                </option>
+                                <option value="220">
+                Trinidad and Tobago                </option>
+                                <option value="221">
+                Tunisia                </option>
+                                <option value="222">
+                Turkey                </option>
+                                <option value="223">
+                Turkmenistan                </option>
+                                <option value="224">
+                Turks and Caicos Islands                </option>
+                                <option value="225">
+                Tuvalu                </option>
+                                <option value="226">
+                Uganda                </option>
+                                <option value="227">
+                Ukraine                </option>
+                                <option value="228">
+                United Arab Emirates                </option>
+                                <option value="229">
+                United Kingdom                </option>
+                                <option value="230">
+                United States                </option>
+                                <option value="231">
+                United States minor outlying islands                </option>
+                                <option value="232">
+                Uruguay                </option>
+                                <option value="233">
+                Uzbekistan                </option>
+                                <option value="234">
+                Vanuatu                </option>
+                                <option value="235">
+                Vatican City State                </option>
+                                <option value="236">
+                Venezuela                </option>
+                                <option value="237">
+                Vietnam                </option>
+                                <option value="238">
+                Virgin Islands (British)                </option>
+                                <option value="239">
+                Virgin Islands (U.S.)                </option>
+                                <option value="240">
+                Wallis and Futuna Islands                </option>
+                                <option value="241">
+                Western Sahara                </option>
+                                <option value="242">
+                Yemen                </option>
+                                <option value="243">
+                Zaire                </option>
+                                <option value="244">
+                Zambia                </option>
+                                <option value="245">
+                Zimbabwe                </option>
+                              </select><span class="select2 select2-container select2-container--default" dir="ltr" data-select2-id="761" style="width: 100%;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-country-zo-container"><span class="select2-selection__rendered" id="select2-country-zo-container" role="textbox" aria-readonly="true"><span class="select2-selection__placeholder">Country</span></span><span class="select2-selection__arrow" role="presentation"><b role="presentation"></b></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span>
+            </div>
+          </div>
+          <div class="col-md-6" bis_skin_checked="1">
+            <div class="form-group" bis_skin_checked="1">
+              <label for="address_1">
+                Address              </label>
+              <input class="form-control" placeholder="Address" name="address_1" type="text" value="">
+            </div>
+          </div>
+          <div class="col-md-6" bis_skin_checked="1">
+            <div class="form-group" bis_skin_checked="1">
+              <label for="address_2"> &nbsp;</label>
+              <input class="form-control" placeholder="Address Line 2" name="address_2" type="text" value="">
+            </div>
+          </div>
+          <div class="col-md-4" bis_skin_checked="1">
+            <div class="form-group" bis_skin_checked="1">
+              <label for="city">
+                City              </label>
+              <input class="form-control" placeholder="City" name="city" type="text" value="">
+            </div>
+          </div>
+          <div class="col-md-4" bis_skin_checked="1">
+            <div class="form-group" bis_skin_checked="1">
+              <label for="state">
+                State / Province              </label>
+              <input class="form-control" placeholder="State / Province" name="state" type="text" value="">
+            </div>
+          </div>
+          <div class="col-md-4" bis_skin_checked="1">
+            <div class="form-group" bis_skin_checked="1">
+              <label for="zipcode">
+                Zip Code / Postal Code              </label>
+              <input class="form-control" placeholder="Zip Code / Postal Code" name="zipcode" type="text" value="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card-footer text-right" bis_skin_checked="1">
+        <button type="reset" class="btn btn-light" href="#add_form" data-toggle="collapse" aria-expanded="true">
+        Reset        </button>
+        &nbsp;
+        <button type="submit" class="btn btn-primary ladda-button" data-style="expand-right"><span class="ladda-label">
+        Save        </span><span class="ladda-spinner"></span></button>
+      </div>
+      <div style="display:none" bis_skin_checked="1"><label>Bot Will Fill This Field</label><input type="text" name="ciapp_check" value=""></div></form>    </div>
+  </div>
+</div>
+<div class="card user-profile-list" bis_skin_checked="1">
+  <div class="card-header" bis_skin_checked="1">
+    <h5>
+      List All      Warehouses    </h5>
+        <div class="card-header-right" bis_skin_checked="1"> <a data-toggle="collapse" href="#add_form" aria-expanded="true" class="btn waves-effect waves-light btn-primary btn-sm m-0"> <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-plus"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+      Add New      </a> </div>
+      </div>
+  <div class="card-body" bis_skin_checked="1">
+    <div class="box-datatable table-responsive" bis_skin_checked="1">
+      <div id="xin_table_wrapper" class="dataTables_wrapper dt-bootstrap4 no-footer" bis_skin_checked="1"><div class="row" bis_skin_checked="1"><div class="col-sm-12 col-md-6" bis_skin_checked="1"><div class="dataTables_length" id="xin_table_length" bis_skin_checked="1"><label>Show <select name="xin_table_length" aria-controls="xin_table" class="custom-select custom-select-sm form-control form-control-sm"><option value="10">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select> entries</label></div></div><div class="col-sm-12 col-md-6" bis_skin_checked="1"><div id="xin_table_filter" class="dataTables_filter" bis_skin_checked="1"><label>Search<input type="search" class="form-control form-control-sm" placeholder="" aria-controls="xin_table"></label></div></div></div><div class="row" bis_skin_checked="1"><div class="col-sm-12" bis_skin_checked="1"><table class="datatables-demo table table-striped table-bordered dataTable no-footer" id="xin_table" role="grid" aria-describedby="xin_table_info" style="width: 1251px;">
+        <thead>
+          <tr role="row"><th width="250" class="sorting_asc" tabindex="0" aria-controls="xin_table" rowspan="1" colspan="1" aria-label="Warehouse Name: activate to sort column descending" aria-sort="ascending" style="width: 250px;">Warehouse Name</th><th class="sorting" tabindex="0" aria-controls="xin_table" rowspan="1" colspan="1" aria-label="Contact Number: activate to sort column ascending" style="width: 271px;">Contact Number</th><th class="sorting" tabindex="0" aria-controls="xin_table" rowspan="1" colspan="1" aria-label="City: activate to sort column ascending" style="width: 97px;">City</th><th class="sorting" tabindex="0" aria-controls="xin_table" rowspan="1" colspan="1" aria-label="Country: activate to sort column ascending" style="width: 160px;">Country</th><th class="sorting" tabindex="0" aria-controls="xin_table" rowspan="1" colspan="1" aria-label="Added By: activate to sort column ascending" style="width: 263px;">Added By</th></tr>
+        </thead>
+      <tbody><tr role="row" class="odd"><td class="sorting_1">
+				<div class="d-inline-block align-middle" bis_skin_checked="1">
+				<div class="d-inline-block" bis_skin_checked="1">
+					<h6 class="m-b-0">shopee</h6>
+				</div>
+			</div>
+				<div class="overlay-edit" bis_skin_checked="1">
+					<span data-toggle="tooltip" data-placement="top" data-state="primary" title="" data-original-title="Edit"><button type="button" class="btn icon-btn btn-sm btn-light-primary waves-effect waves-light" data-toggle="modal" data-target=".edit-modal-data" data-field_id="KsB24U3LTGWr_L87YlumbGGzIDXXjvv85NiJjR724Xk"><i class="feather icon-edit"></i></button></span><span data-toggle="tooltip" data-placement="top" data-state="danger" title="" data-original-title="Delete"><button type="button" class="btn icon-btn btn-sm btn-light-danger waves-effect waves-light delete" data-toggle="modal" data-target=".delete-modal" data-record-id="zKt0r3tb6ZxbfnHdH2nuF5YcTV9gnqirTIJ8BsEyr10"><i class="feather icon-trash-2"></i></button></span>
+				</div></td><td>022000202</td><td>das</td><td>Albania</td><td>admin_example hello</td></tr></tbody></table></div></div><div class="row" bis_skin_checked="1"><div class="col-sm-12 col-md-5" bis_skin_checked="1"><div class="dataTables_info" id="xin_table_info" role="status" aria-live="polite" bis_skin_checked="1">Showing 1 to 1 of 1 records</div></div><div class="col-sm-12 col-md-7" bis_skin_checked="1"><div class="dataTables_paginate paging_simple_numbers" id="xin_table_paginate" bis_skin_checked="1"><ul class="pagination"><li class="paginate_button page-item previous disabled" id="xin_table_previous"><a href="#" aria-controls="xin_table" data-dt-idx="0" tabindex="0" class="page-link">Previous</a></li><li class="paginate_button page-item active"><a href="#" aria-controls="xin_table" data-dt-idx="1" tabindex="0" class="page-link">1</a></li><li class="paginate_button page-item next disabled" id="xin_table_next"><a href="#" aria-controls="xin_table" data-dt-idx="2" tabindex="0" class="page-link">Next</a></li></ul></div></div></div></div>
+    </div>
+  </div>
+</div>
+    <!-- [ Main Content ] end --> 
+  </div>
+</div>
+<!-- [ Main Content ] end -->
+
+
+<div class="modal notification-modal fade" id="notification-modal" tabindex="-1" role="dialog" aria-hidden="true" bis_skin_checked="1">
+  <div class="modal-dialog" role="document" bis_skin_checked="1">
+    <div class="modal-content" bis_skin_checked="1">
+      <div class="modal-header" bis_skin_checked="1">
+        <h5 class="modal-title">
+          Notifications          <br>
+          <small class="text-muted">
+          Mark all as read          </small> </h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">×</span> </button>
+      </div>
+      <div class="modal-body" bis_skin_checked="1">
+        <div class="tab-pane fade show active" id="pc-noti-home" role="tabpanel" aria-labelledby="pc-noti-home-tab" bis_skin_checked="1">
+          <ul class="list-unstyled task-list">
+                                            </ul>
+          <!--<div class="text-center"> <a href="#!" class="b-b-primary text-primary">View Friend List</a> </div>-->
+        </div>
+      </div>
+      <div class="modal-footer" bis_skin_checked="1">
+        <button type="button" class="btn btn-light-danger btn-sm" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<style type="text/css">
+#ui-datepicker-div {
+	z-index:1100 !important;
+}
+.modal-backdrop {
+	z-index: 1091 !important;
+}
+.modal {
+	z-index: 1100 !important;
+}
+.popover {
+	z-index: 1100 !important;
+}
+</style>
+<div class="modal fade show delete-modal" role="dialog" aria-hidden="true" bis_skin_checked="1">
+  <div class="modal-dialog" bis_skin_checked="1">
+    <div class="modal-content" bis_skin_checked="1">
+      <div class="modal-header" bis_skin_checked="1">
+        <h5 class="modal-title">
+          Are you sure you want to delete this record?        </h5>
+        <button type="button" class="close" data-dismiss="modal"> <span aria-hidden="true">×</span> </button>
+      </div>
+      <div class="modal-body" bis_skin_checked="1">
+        <div class="alert alert-danger" bis_skin_checked="1"> <strong>
+          You won't be able to revert this!          </strong> </div>
+      </div>
+                  <form action="https://hrm.anhtester.com/erp/warehouse-list" name="delete_record" id="delete_record" autocomplete="off" role="form" method="post" accept-charset="utf-8">
+<input type="hidden" name="csrf_token" value="d621d1a25bc33098b6da37fa925f4b61">
+<input type="hidden" name="_method" value="DELETE">
+
+<input type="hidden" name="_token" value="000">
+      <div class="modal-footer" bis_skin_checked="1">
+                <input type="hidden" name="token_type" value="0" id="token_type">
+          <button type="button" class="btn btn-light" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-primary ladda-button" data-style="expand-right"><span class="ladda-label">Confirm</span><span class="ladda-spinner"></span></button>
+        <div style="display:none" bis_skin_checked="1"><label>Bot Will Fill This Field</label><input type="text" name="ciapp_check" value=""></div>      </div></form>
+    </div>
+  </div>
+</div>
+<div class="modal view-modal-data fade" id="notification-modal" tabindex="-1" role="dialog" aria-hidden="true" bis_skin_checked="1">
+    <div class="modal-dialog" role="document" bis_skin_checked="1">
+        <div class="modal-content" id="ajax_view_modal" bis_skin_checked="1"></div>
+    </div>
+</div>
+<div class="modal fade show edit-modal-data" role="dialog" aria-labelledby="edit-modal-data" aria-hidden="true" bis_skin_checked="1">
+  <div class="modal-dialog modal-lg" bis_skin_checked="1">
+    <div class="modal-content" id="ajax_modal" bis_skin_checked="1"></div>
+  </div>
+</div>
+<div class="modal fade show payroll-modal-data" role="dialog" aria-labelledby="edit-modal-data" aria-hidden="true" bis_skin_checked="1">
+  <div class="modal-dialog" bis_skin_checked="1">
+    <div class="modal-content" id="ajax_payroll_modal" bis_skin_checked="1"></div>
+  </div>
+</div>
+<!-- Core scripts -->
+
+<!-- Required Js -->
+    <script src="https://hrm.anhtester.com/public/assets/js/vendor-all.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/plugins/jquery-ui/jquery-ui.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/bootstrap.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/feather.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/js/pcoded.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/clipboard.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/js/uikit.min.js"></script><div class="pc-example-modal" bis_skin_checked="1"><a href="javascript:void(0)" class="md-pc-example-modal-copy"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clipboard"><path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path><rect x="8" y="2" width="8" height="4" rx="1" ry="1"></rect></svg></a><a href="javascript:void(0)" class="pc-example-modal-close"><svg viewBox="0 0 24 24" width="24" height="24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" class="css-i6dzq1"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></a><div class="scroll-div" bis_skin_checked="1"><div class="pc-example-modal-content" bis_skin_checked="1"></div></div></div>
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/jquery.dataTables.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/dataTables.bootstrap4.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/select2.full.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/plugins/toastr/toastr.js"></script>
+	<script src="https://hrm.anhtester.com/public/assets/plugins/sweetalert2/sweetalert2@10.js"></script>
+    <link rel="stylesheet" href="https://hrm.anhtester.com/public/assets/plugins/ladda/ladda.css">
+    <script src="https://hrm.anhtester.com/public/assets/plugins/spin/spin.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/plugins/ladda/ladda.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/plugins/moment/moment.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/plugins/bootstrap-material-datetimepicker/bootstrap-material-datetimepicker.js"></script>
+
+    <script src="https://hrm.anhtester.com/public/assets/plugins/colorpicker/bootstrap-colorpicker.js"></script>
+    <link href="https://hrm.anhtester.com/public/assets/plugins/colorpicker/bootstrap-colorpicker.css" rel="stylesheet">
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/jquery.bootstrap.wizard.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/jquery.barrating.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/isotope.pkgd.min.js"></script>
+
+    <script src="https://hrm.anhtester.com/public/assets/js/plugins/jquery.barrating.min.js"></script>
+                 <script>
+	$('.date').bootstrapMaterialDatePicker({
+		weekStart: 0,
+		time: false,
+		clearButton: false,
+		format: 'DD-MM-YYYY',
+		lang: 'en'
+	});
+	$('.timepicker').bootstrapMaterialDatePicker({
+		date: false,
+		shortTime: true,
+		format: 'HH:mm',
+		lang: 'en'
+	});
+  	$('.hr_month_year').datepicker({
+		changeMonth: true,
+		changeYear: true,
+		showButtonPanel: true,
+		dateFormat:'yy-mm',
+		yearRange: '1950:' + (new Date().getFullYear() + 15),
+		beforeShow: function(input) {
+			$(input).datepicker("widget").addClass('hide-calendar');
+		},
+		onClose: function(dateText, inst) {
+			var month = $("#ui-datepicker-div .ui-datepicker-month :selected").val();
+			var year = $("#ui-datepicker-div .ui-datepicker-year :selected").val();
+			$(this).datepicker('setDate', new Date(year, month, 1));
+			$(this).datepicker('widget').removeClass('hide-calendar');
+			$(this).datepicker('widget').hide();
+		}
+			
+	});
+</script>
+<script>
+	 $(function() {
+        $('#ex20a').on('click', function(e) {
+            $('#ex20a')
+                .parent()
+                .find(' >.well')
+                .toggle()
+                .find('input')
+                .slider('relayout');
+            e.preventDefault();
+        });
+    });
+	// [ rating-fontawesome ]
+	$('.star-rating').barrating({
+		theme: 'fontawesome-stars',
+		showSelectedRating: false
+	});
+	$('.bar-rating').barrating('show', {
+            theme: 'bars-1to10',
+        });
+        var currentRating = $('#demo-fontawesome-o').data('current-rating');
+	$('#demo-fontawesome-o').barrating({
+            theme: 'fontawesome-stars-o',
+            showSelectedRating: false,
+            initialRating: $('#demo-fontawesome-o').data('current-rating'),
+			hoverState: false,
+			readonly: false,
+			clickState: false,
+        });
+    // init Isotope
+    var $grid = $('.grid').isotope({
+        itemSelector: '.element-item',
+        layoutMode: 'fitRows',
+        getSortData: {
+            name: '.name',
+            symbol: '.symbol',
+            number: '.number parseInt',
+            category: '[data-category]',
+        }
+    });
+
+    // bind filter button click
+    $('#filters').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: filterValue
+        });
+    });
+    $('#filters-side').on('click', 'button', function() {
+        var filterValue = $(this).attr('data-filter');
+        $grid.isotope({
+            filter: filterValue
+        });
+    });
+    // change active class on buttons
+    $('.button-group').each(function(i, buttonGroup) {
+        var $buttonGroup = $(buttonGroup);
+        $buttonGroup.on('click', 'button', function() {
+            $buttonGroup.find('.active').removeClass('active');
+            $(this).addClass('active');
+        });
+    });
+</script>
+    <script>
+    $('.chk-indeterminate').prop('indeterminate', true);
+    </script>
+	<script type="application/javascript">
+	$(document).ready(function(){
+		$('[data-plugin="select_hrm"]').select2($(this).attr('data-options'));
+		$('[data-plugin="select_hrm"]').select2({ width:'100%' });
+        $('.demo-movie').barrating('show', {
+            theme: 'bars-movie'
+        });
+		$('.hr_color').colorpicker({
+		  format: 'auto'
+		});
+        //Ladda.bind('button[type=submit]');
+        toastr.options.closeButton = 0;
+        toastr.options.progressBar = true;
+        toastr.options.timeOut = 3000;
+        toastr.options.preventDuplicates = true;
+        toastr.options.positionClass = "toast-top-center";
+    });
+    </script>
+        <script type="application/javascript">
+	$(document).ready(function(){
+		Ladda.bind('button[type=submit]');
+	});
+	</script>
+                
+    <script type="text/javascript">
+    var desk_url = 'https://hrm.anhtester.com/erp/desk';
+    var processing_request = 'You are redirecting to dashboard..';</script>
+	<script type="text/javascript">var dt_lengthMenu = 'Show _MENU_ entries';</script>
+	<script type="text/javascript">var dt_zeroRecords = 'No records available';</script>
+	<script type="text/javascript">var dt_info = 'Showing _START_ to _END_ of _TOTAL_ records';</script>
+	<script type="text/javascript">var dt_infoEmpty = 'No records available';</script>
+	<script type="text/javascript">var dt_infoFiltered = '(filtered from _MAX_ total records)';</script>
+	<script type="text/javascript">var dt_search = 'Search';</script>
+	<script type="text/javascript">var dt_first = 'First';</script>
+	<script type="text/javascript">var dt_previous = 'Previous';</script>
+	<script type="text/javascript">var dt_next = 'Next';</script>
+	<script type="text/javascript">var dt_last = 'Last';</script>
+	<script type="text/javascript">var main_url = 'https://hrm.anhtester.com/erp/';</script>
+	<script type="text/javascript">var processing_request = 'You are redirecting to dashboard..';</script>
+	<script type="text/javascript">var request_submitted = 'Request Submitted.';</script>
+    
+    <script type="text/javascript" src="https://hrm.anhtester.com/public/assets/plugins/kendo/kendo.all.min.js"></script>
+    <script src="https://hrm.anhtester.com/public/assets/plugins/kendo/kendo.timezones.min.js"></script>
+	<script type="text/javascript" src="https://hrm.anhtester.com/public/module_scripts/warehouse.js"></script>
+            
+        <script>
+		$(".editor").kendoEditor({
+			resizable: {
+				content: true,
+				toolbar: true
+			}
+		});
+        </script>
+                                                                <script>
+	$('.btn-print-invoice').on('click', function() {
+		var link2 = document.createElement('link');
+		link2.innerHTML =
+			'<style>@media print{*,::after,::before{text-shadow:none!important;box-shadow:none!important}a:not(.btn){text-decoration:underline}abbr[title]::after{content:" ("attr(title) ")"}pre{white-space:pre-wrap!important}blockquote,pre{border:1px solid #adb5bd;page-break-inside:avoid}thead{display:table-header-group}img,tr{page-break-inside:avoid}h2,h3,p{orphans:3;widows:3}h2,h3{page-break-after:avoid}@page{size:a3}body{min-width:992px!important}.container{min-width:992px!important}.navbar{display:none}.badge{border:1px solid #000}.table{border-collapse:collapse!important}.table td,.table th{background-color:#fff!important}.table-bordered td,.table-bordered th{border:1px solid #dee2e6!important}.table-dark{color:inherit}.table-dark tbody+tbody,.table-dark td,.table-dark th,.table-dark thead th{border-color:#dee2e6}.table .thead-dark th{color:inherit;border-color:#dee2e6}}.page-header{display:none;}</style>';
+
+		document.getElementsByTagName('head')[0].appendChild(link2);
+		window.print();
+	});
+</script>
+    
+</body></html>

@@ -14,6 +14,9 @@ class BasePage:
     def _get_locator(self, locator: str) -> Locator:
         """Trả về đối tượng Locator từ chuỗi selector."""
         return self.page.locator(locator)
+    
+    def _get_by_role(self,role:str) --> Role:
+        return self.page.get_by_role(role)
 
     def _click(self, locator: str, name: str = ""):
         """Thực hiện click với xử lý lỗi và ghi log."""
@@ -30,6 +33,17 @@ class BasePage:
         """Điền dữ liệu vào ô input."""
         print(f"[Fill] '{text}' into {name or locator}")
         self._get_locator(locator).fill(text)
+
+    def _select_item_from_ddl(self,locator:str,search:str,item:str,index: int = 1):
+        """Click vô ô, điền dữ liệu, nhấn ENTER"""
+
+        ddl = self._get_locator(locator)
+        ddl.click()
+
+        # Tìm ô search và nhập giá trị
+        search_box = self._get_by_role(search).nth(index)
+        search_box.fill(item)
+        search_box.press("Enter")
 
 
     # page.locator(PICKUP_LOCATION_DROPDOWN).click() # Click để mở dropdown

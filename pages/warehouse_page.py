@@ -32,8 +32,8 @@ class WarehousePage(BasePage):
     SUCCESS_MESSAGE = "text='Warehouse added'" # Giả định text của thông báo thành công
     WAREHOUSE_LIST_TABLE = "#xin_table" # Locator cho bảng chứa danh sách warehouse
 
-    # def __init__(self, page: Page):
-    #     self.page = page
+    def __init__(self, page: Page):
+        self.page = page
 
     # def __init__(self, location_option=None, country_name=None):
         # self.name = f"WH_{fake.company()}_{fake.random_int(min=1000, max=9999)}"
@@ -53,7 +53,32 @@ class WarehousePage(BasePage):
     def click_add_new_button(self):
         self._click(self.ADD_NEW_BUTTON)
 
-    def add_warehouse_record(self,warehouse_data: WarehouseData):
+    def select_country(self,country_name):
+        self._select_item_from_ddl(self.COUNTRY_DROPDOWN_DISPLAY,self.COUNTRY_SEARCH_INPUT,country_name,1)
+
+
+    #     page.get_by_role("button", name=" Login").click()
+    # page.get_by_role("link", name="Inventory Control").click()
+    # page.get_by_role("link", name="Warehouses").click()
+    # page.get_by_role("link", name="Add New").click()
+
+        # page.get_by_role("textbox", name="Yes").click()
+        # page.get_by_role("option", name="Yes").click()
+        # page.get_by_placeholder("Contact Number").click()
+        # page.get_by_placeholder("Contact Number").fill("124444444")
+        # page.get_by_placeholder("Warehouse Name").click()
+        # page.get_by_placeholder("Warehouse Name").fill("ABBWWW")
+        # page.get_by_placeholder("Address", exact=True).click()
+        # page.get_by_placeholder("Address", exact=True).fill("australia")
+        # page.get_by_placeholder("City").click()
+        # page.get_by_placeholder("City").fill("norw")
+        # page.get_by_placeholder("State / Province").click()
+        # page.get_by_placeholder("State / Province").fill("12121")
+        # page.get_by_placeholder("Zip Code / Postal Code").click()
+        # page.get_by_placeholder("Zip Code / Postal Code").fill("634545435")
+        # page.get_by_role("button", name="Save").click()    
+
+    def fill_warehouse_details(self,warehouse_data: WarehouseData):
         
         # page.goto("https://hrm.anhtester.com/login")
         # page.fill("input[name='email']", "admin_example")
@@ -62,9 +87,9 @@ class WarehousePage(BasePage):
         # expect(page.locator("text='Welcome'")).to_be_visible() # Xác nhận đăng nhập thành công
 
     # Điều hướng đến trang thêm Warehouse
-        self.navigate_to_warehouse_list()
+        # self.navigate_to_warehouse_list()
         #----------------------------- update by going to submenu later
-        self.click_add_new_button()
+        # self.click_add_new_button()
 
     # --- Step 1: Tạo dữ liệu ngẫu nhiên ---
         # warehouse_data = WarehouseData()
@@ -98,19 +123,22 @@ class WarehousePage(BasePage):
         # else:
         #     page.locator(PICKUP_LOCATION_OPTION_NO).click()
 
-        self.select_from_custom_dropdown(self.PICKUP_LOCATION_DROPDOWN_DISPLAY, warehouse_data.location)
+        self.select_from_custom_dropdown(self.PICKUP_LOCATION_DROPDOWN, warehouse_data.location)
+
+        self.page.locator(self.COUNTRY_DROPDOWN_DISPLAY).click()
+
 
         # Logic chọn Country (vẫn giữ ở đây vì phức tạp hơn với search input)
-        self.page.locator(self.COUNTRY_DROPDOWN_DISPLAY).click()
-        self.page.wait_for_selector(self.COUNTRY_OPTIONS_LIST)
+        # self.page.locator(self.COUNTRY_DROPDOWN_DISPLAY).click()
+        # self.page.wait_for_selector(self.COUNTRY_OPTIONS_LIST)
         
-        country_elements = self.page.locator(self.COUNTRY_OPTIONS_LIST).all()
-        all_countries = [elem.text_content().strip() for elem in country_elements if elem.text_content().strip() != '']
-        selected_country = random.choice(all_countries)
-        warehouse_data.country = selected_country
+        # country_elements = self.page.locator(self.COUNTRY_OPTIONS_LIST).all()
+        # all_countries = [elem.text_content().strip() for elem in country_elements if elem.text_content().strip() != '']
+        # selected_country = random.choice(all_countries)
+        # warehouse_data.country = selected_country
         
-        self.page.fill(self.COUNTRY_SEARCH_INPUT, selected_country)
-        # Locator này cần chính xác để click vào option đã search
+        self.page.fill(self.COUNTRY_SEARCH_INPUT, "Yemen")
+        # # Locator này cần chính xác để click vào option đã search
         self.page.locator(f"//ul[contains(@id, 'select2-country') and contains(@id, '-results')]/li[text()='{selected_country}']").click()
         
         self.page.fill(self.ADDRESS_INPUT, warehouse_data.address)
